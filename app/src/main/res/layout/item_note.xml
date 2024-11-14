@@ -1,0 +1,54 @@
+<!-- item_note.xml -->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="4dp"
+    android:radius="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/note_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Note Text"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp"
+            android:ellipsize="end"
+            android:maxLines="2" />
+
+        <Button
+            android:id="@+id/btn_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/primaryColorLight"
+            android:padding="8dp"
+            android:textSize="14sp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_alignParentEnd="true"/>
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/primaryColor"
+            android:padding="8dp"
+            android:textSize="14sp"
+            android:layout_alignParentEnd="true"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

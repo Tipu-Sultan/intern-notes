@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="@color/primaryColorLight">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Google Logo"
+        android:layout_marginBottom="32dp"/>
+
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome Back!"
+        android:textSize="24sp"
+        android:textColor="@color/primaryColor"
+        android:layout_marginBottom="24dp"
+        android:textAlignment="center"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:indeterminate="true"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_shadow"
+        />
+
+    <Button
+        android:id="@+id/btn_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign In with Google"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:layout_marginBottom="16dp"
+        android:drawablePadding="16dp"
+        android:padding="16dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_shadow"/>
+
+</LinearLayout>

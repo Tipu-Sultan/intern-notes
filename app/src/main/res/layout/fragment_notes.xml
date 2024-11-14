@@ -1,0 +1,56 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textColor="@color/white"
+        android:layout_marginBottom="16dp"
+        android:textSize="16sp"
+        android:drawablePadding="8dp" />
+
+    <Button
+        android:id="@+id/btn_add_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Note"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/primaryColor"
+        android:layout_marginBottom="24dp"
+        android:textSize="16sp"
+        android:drawablePadding="8dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_notes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="8dp"
+            android:clipToPadding="false" />
+
+        <TextView
+            android:id="@+id/tv_no_notes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No notes available"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+</LinearLayout>
